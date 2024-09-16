@@ -1,6 +1,3 @@
-Certainly! Here's a sample `README.md` for a personal portfolio website built with HTML and CSS. This README assumes that the website is straightforward, consisting of just a few HTML and CSS files.
-
----
 
 # Personal Portfolio Website
 
