@@ -1,0 +1,251 @@
+@import url("https://fonts-googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+body {
+    overflow: overlay;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+width: 6px;
+background: transparent;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner{
+    border-radius: 10px;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/Images/peakpx.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    /*background: linear-gradient(to right, #7a1e47 0%, #7a1e47 4%, #351930 40%, #351930 100%);*/
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.6%;
+    padding: 40px 100px;
+    /*
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 45px;*/
+}
+nav.sticky {
+    padding: 5px 100px;
+    background: linear-gradient(to right, #7a1e47 0%, #7a1e47 4%, #351930 40%, #351930 100%);
+}
+
+.logo a {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+li {
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-left: 33px;
+}
+
+li a:hover {
+    color: #C98D26;
+    transition-duration: .5s;
+}
+
+#greet {
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    color: white;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: none;
+    height: 20vh;
+    width: 20vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 120%;
+    animation: upwards 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+}
+
+#wel {
+    color: white;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    padding: none;
+    height: 20vh;
+    width: 20vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 120%;
+    font-weight: bolder;
+    animation: opposite 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+}
+
+#intro {
+    position: absolute;
+    top: 58%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    padding: none;
+    height: 20vh;
+    width: 40vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 130%;
+    color: white;
+    animation: east 2.8s;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+}
+
+
+#name {
+    color:  #351930;
+    border: none;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    padding: none;
+    height: 20vh;
+    width: 20vh;
+    font-family: "Baskervville SC", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 150%;
+    animation: west 3s;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+}
+@keyframes upwards {
+    0%{top: 90%;}
+    40%,
+    60%{top: 35%;}
+    100%{top: 50%;}
+    
+}
+
+@keyframes opposite {
+    0%{top: 5%;}
+    40%,
+    60%{top: 45%;}
+    100%{top: 50%;}
+    
+}
+
+@keyframes east {
+    0%{left: 90%;}
+    40%,
+    60%{left: 32%;}
+    100%{left: 36%;}
+    
+}
+
+@keyframes west{
+    0%{left: 0%;}
+    40%,
+    60%{left: 50%;}
+    100%{left: 42.5%;}
+    
+}
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color:  #131323 ;
+    height: 150vh;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+}
+
+.about-text {
+    width: 550px;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    width: 1130px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2{
+color: white;
+font-size: 75px;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text h5 span {
+    color: #FF5349;
+}
+
+.about-text p {
+    color:/*#47b8d6*/ /*#9c2052*/ #FFC982;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.portfolio {
+    height: 100vh;
+    width: 100%;
+    background: white;
+}
